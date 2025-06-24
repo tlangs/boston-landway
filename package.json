@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "boston-landway",
   "version": "0.1.0",
   "homepage": "https://tlangs.github.io/boston-landway/",
   "dependencies": {
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build/client"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -13,13 +13,15 @@ function getRandomColor() {
   return color;
 }
 
-function routes() {
-  const set = new Set();
+function routes(): number[] {
+  const set = new Set<number>();
   GeoJson.features.forEach((feature) => {
     set.add(feature.properties.routeId)
   })
   return Array.from(set)
 }
+
+const routeIdToColor: Map<number, string> = new Map(routes().map(routeId => [routeId, getRandomColor()]))
 
 
 function Mapbox() {
@@ -31,20 +33,24 @@ function Mapbox() {
     mapboxgl.accessToken = 'pk.eyJ1IjoidGxhbmdzZm9yZCIsImEiOiJjbWM4MTkzMGYxaGJxMmxwdGdweTVqb3RhIn0.S0CyG6BWDXPKNyG-mjJQOQ'
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
-      center: [-71.057778, 42.360278],
+      center: [-71.09549, 42.30450],
       zoom: 10.12,
       style: 'mapbox://styles/mapbox/outdoors-v12',
+      maxBounds: [
+        [-71.39417, 42.13907],
+        [-70.90290, 42.45938]
+    ]
     });
 
     mapRef.current.on('load', () => {
       mapRef.current.addSource('boston-landway', {
         type: 'geojson',
-        data: GeoJson as GeoJSON.FeatureCollection
+        data: GeoJson as GeoJSON.FeatureCollection,
       });
 
       routes().forEach((routeId) => {
         mapRef.current.addLayer({
-          id: 'route' + routeId,
+          id: 'lowlevel' + routeId,
           type: 'line',
           source: 'boston-landway',
           layout: {
@@ -52,11 +58,43 @@ function Mapbox() {
             "line-cap": 'round'
           },
           paint: {
-            'line-color': getRandomColor(),
+            'line-color': routeIdToColor.get(routeId),
             'line-opacity': 1,
-            'line-width': 5
+            'line-width': 2,
+            'line-dasharray': [.5, 2]
           },
-          filter: ['==', 'routeId', routeId]
+          filter: ['all', ['==', 'routeId', routeId], ['<=', 'protectionLevel', 3]]
+        });
+        mapRef.current.addLayer({
+          id: 'midlevel' + routeId,
+          type: 'line',
+          source: 'boston-landway',
+          layout: {
+            'line-join': 'round',
+            "line-cap": 'round'
+          },
+          paint: {
+            'line-color': routeIdToColor.get(routeId),
+            'line-opacity': 1,
+            'line-width': 2,
+          },
+          filter: ['all', ['==', 'routeId', routeId], ['>', 'protectionLevel', 3], ['<=', 'protectionLevel', 6]]
+        });
+        mapRef.current.addLayer({
+          id: 'highlevel' + routeId,
+          type: 'line',
+          source: 'boston-landway',
+          layout: {
+            'line-join': 'round',
+            "line-cap": 'round'
+          },
+          paint: {
+            'line-color': routeIdToColor.get(routeId),
+            'line-opacity': 1,
+            'line-width': 2,
+            'line-gap-width': .5
+          },
+          filter: ['all', ['==', 'routeId', routeId], ['>=', 'protectionLevel', 7]]
         });
       })
 
