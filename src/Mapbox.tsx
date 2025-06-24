@@ -60,10 +60,10 @@ function Mapbox() {
           paint: {
             'line-color': routeIdToColor.get(routeId),
             'line-opacity': 1,
-            'line-width': 2,
+            'line-width': 3,
             'line-dasharray': [.5, 2]
           },
-          filter: ['all', ['==', 'routeId', routeId], ['<=', 'protectionLevel', 3]]
+          filter: ['all', ['==', 'routeId', routeId], ['<', 'protectionLevel', 3]]
         });
         mapRef.current.addLayer({
           id: 'midlevel' + routeId,
@@ -76,9 +76,9 @@ function Mapbox() {
           paint: {
             'line-color': routeIdToColor.get(routeId),
             'line-opacity': 1,
-            'line-width': 2,
+            'line-width': 3,
           },
-          filter: ['all', ['==', 'routeId', routeId], ['>', 'protectionLevel', 3], ['<=', 'protectionLevel', 6]]
+          filter: ['all', ['==', 'routeId', routeId], ['>=', 'protectionLevel', 3], ['<', 'protectionLevel', 6]]
         });
         mapRef.current.addLayer({
           id: 'highlevel' + routeId,
@@ -91,10 +91,10 @@ function Mapbox() {
           paint: {
             'line-color': routeIdToColor.get(routeId),
             'line-opacity': 1,
-            'line-width': 2,
-            'line-gap-width': .5
+            'line-width': 3,
+            'line-gap-width': .6
           },
-          filter: ['all', ['==', 'routeId', routeId], ['>=', 'protectionLevel', 7]]
+          filter: ['all', ['==', 'routeId', routeId], ['>=', 'protectionLevel', 8]]
         });
       })
 
