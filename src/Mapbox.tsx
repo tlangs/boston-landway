@@ -1,11 +1,11 @@
 import './Mapbox.css'
-import { useRef, useEffect, type RefObject } from 'react'
+import { useRef, useEffect, type RefObject, ReactElement } from 'react'
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import GeoJson from './geojson.json';
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
+function getRandomColor(): string {
+  const letters = '0123456789ABCDEF';
   var color = '#';
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
@@ -24,7 +24,7 @@ function routes(): number[] {
 const routeIdToColor: Map<number, string> = new Map(routes().map(routeId => [routeId, getRandomColor()]))
 
 
-function Mapbox() {
+function Mapbox(): ReactElement {
 
   const mapRef: RefObject<mapboxgl.Map> = useRef(null as unknown as mapboxgl.Map);
   const mapContainerRef: RefObject<HTMLDivElement> = useRef(null as unknown as HTMLDivElement);
@@ -94,18 +94,17 @@ function Mapbox() {
             'line-width': 3,
             'line-gap-width': .6
           },
-          filter: ['all', ['==', 'routeId', routeId], ['>=', 'protectionLevel', 8]]
+          filter: ['all', ['==', 'routeId', routeId], ['>=', 'protectionLevel', 6]]
         });
       })
 
     })
 
-
-
     return () => {
       mapRef.current.remove()
     }
   }, [])
+
   return (
     <div id="root">
       <div id='map-container' ref={mapContainerRef} />
