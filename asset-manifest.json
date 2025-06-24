@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/boston-landway/static/css/main.b7107602.css",
-    "main.js": "/boston-landway/static/js/main.97844805.js",
+    "main.js": "/boston-landway/static/js/main.cc657e37.js",
     "static/js/453.5ca8ecbe.chunk.js": "/boston-landway/static/js/453.5ca8ecbe.chunk.js",
     "index.html": "/boston-landway/index.html",
     "main.b7107602.css.map": "/boston-landway/static/css/main.b7107602.css.map",
-    "main.97844805.js.map": "/boston-landway/static/js/main.97844805.js.map",
+    "main.cc657e37.js.map": "/boston-landway/static/js/main.cc657e37.js.map",
     "453.5ca8ecbe.chunk.js.map": "/boston-landway/static/js/453.5ca8ecbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7107602.css",
-    "static/js/main.97844805.js"
+    "static/js/main.cc657e37.js"
   ]
 }
