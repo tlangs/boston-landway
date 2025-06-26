@@ -12,6 +12,8 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "mapbox-gl": "^3.13.0",
+    "osmtogeojson": "^3.0.0-beta.5",
+    "overpass-ts": "^4.3.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
