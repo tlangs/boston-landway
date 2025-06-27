@@ -2,14 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Mapbox from './Mapbox';
+import LevelOfStressRouteMap from './views/LevelOfStressRouteMap/LevelOfStressRouteMap';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProposedRoutesMap from './views/ProposedRoutesMap/ProposedRoutesMap';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Mapbox />
+    <BrowserRouter basename='boston-landway'>
+      <Routes>
+        <Route path="/" element={<ProposedRoutesMap/>}/>
+        <Route path="/stress-map" element={<LevelOfStressRouteMap/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
