@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import LevelOfStressRouteMap from './views/LevelOfStressRouteMap/LevelOfStressRouteMap';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import ProposedRoutesMap from './views/ProposedRoutesMap/ProposedRoutesMap';
 
 const root = ReactDOM.createRoot(
@@ -11,12 +11,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='boston-landway'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<ProposedRoutesMap/>}/>
         <Route path="/stress-map" element={<LevelOfStressRouteMap/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
