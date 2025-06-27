@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/boston-landway/static/css/main.b7107602.css",
-    "main.js": "/boston-landway/static/js/main.749b5b55.js",
+    "main.css": "/boston-landway/static/css/main.aef273f4.css",
+    "main.js": "/boston-landway/static/js/main.6bafd195.js",
     "static/js/453.5ca8ecbe.chunk.js": "/boston-landway/static/js/453.5ca8ecbe.chunk.js",
+    "static/media/stress_level_legend.svg": "/boston-landway/static/media/stress_level_legend.ae2e89358b04960b32decb6650b1438a.svg",
     "index.html": "/boston-landway/index.html",
-    "main.b7107602.css.map": "/boston-landway/static/css/main.b7107602.css.map",
-    "main.749b5b55.js.map": "/boston-landway/static/js/main.749b5b55.js.map",
+    "main.aef273f4.css.map": "/boston-landway/static/css/main.aef273f4.css.map",
+    "main.6bafd195.js.map": "/boston-landway/static/js/main.6bafd195.js.map",
     "453.5ca8ecbe.chunk.js.map": "/boston-landway/static/js/453.5ca8ecbe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7107602.css",
-    "static/js/main.749b5b55.js"
+    "static/css/main.aef273f4.css",
+    "static/js/main.6bafd195.js"
   ]
 }
