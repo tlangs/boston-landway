@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/boston-landway/static/css/main.aef273f4.css",
-    "main.js": "/boston-landway/static/js/main.d640103d.js",
+    "main.css": "/boston-landway/static/css/main.56b3931d.css",
+    "main.js": "/boston-landway/static/js/main.57441754.js",
     "static/js/453.5ca8ecbe.chunk.js": "/boston-landway/static/js/453.5ca8ecbe.chunk.js",
-    "static/media/stress_level_legend.svg": "/boston-landway/static/media/stress_level_legend.ae2e89358b04960b32decb6650b1438a.svg",
+    "static/media/Text_LTS2.svg": "/boston-landway/static/media/Text_LTS2.898569cb394cdcf867a3c3edeb357a8d.svg",
+    "static/media/Text_LTS1.svg": "/boston-landway/static/media/Text_LTS1.66b08c3b2d7c158cc7ee49279a5f256b.svg",
+    "static/media/Text_LTS3.svg": "/boston-landway/static/media/Text_LTS3.ac005a29c3d91a451eb38c3500a50080.svg",
+    "static/media/Text_LTS4.svg": "/boston-landway/static/media/Text_LTS4.0f51e235ada613da05aa9b3449542f20.svg",
+    "static/media/BikeStressMap.svg": "/boston-landway/static/media/BikeStressMap.79e1124471f0e9b0953954c81c58fe8e.svg",
+    "static/media/Icon_LTS4.svg": "/boston-landway/static/media/Icon_LTS4.1be5e998ec147097d90f039cfdd6c974.svg",
+    "static/media/Icon_LTS1.svg": "/boston-landway/static/media/Icon_LTS1.c5233453dafa8ef5010b9e72486e9a0e.svg",
+    "static/media/Icon_LTS2.svg": "/boston-landway/static/media/Icon_LTS2.0590313b4c1397867e940c74040eab6b.svg",
+    "static/media/Icon_LTS3.svg": "/boston-landway/static/media/Icon_LTS3.943588ee29031f845b9dbe63ae60e0ee.svg",
     "index.html": "/boston-landway/index.html",
-    "main.aef273f4.css.map": "/boston-landway/static/css/main.aef273f4.css.map",
-    "main.d640103d.js.map": "/boston-landway/static/js/main.d640103d.js.map",
+    "main.56b3931d.css.map": "/boston-landway/static/css/main.56b3931d.css.map",
+    "main.57441754.js.map": "/boston-landway/static/js/main.57441754.js.map",
     "453.5ca8ecbe.chunk.js.map": "/boston-landway/static/js/453.5ca8ecbe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aef273f4.css",
-    "static/js/main.d640103d.js"
+    "static/css/main.56b3931d.css",
+    "static/js/main.57441754.js"
   ]
 }
