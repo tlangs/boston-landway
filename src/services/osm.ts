@@ -73,8 +73,8 @@ export async function fetchWayOsm(list: RouteElementList): Promise<OverpassJson>
       .filter(notEmpty)
 
     elementsInOrder.forEach(w => {
-      var evaluated = evaluateLTS(w);
-      w.tags = { ...w.tags, lts: evaluated?.lts.toString() || '4', ltsMessage: evaluated?.message }
+      var evaluated = evaluateLTS(w as OverpassWay);
+      w.tags = { ...w.tags, lts: evaluated?.lts.toString() || '4', ltsMessage: JSON.stringify(evaluated?.message || []) }
     })
 
     return osmtogeojson({ elements: elementsInOrder });
