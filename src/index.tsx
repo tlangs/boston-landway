@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import LevelOfStressRouteMap from './views/LevelOfStressRouteMap/LevelOfStressRouteMap';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import ProposedRoutesMap from './views/ProposedRoutesMap/ProposedRoutesMap';
+import GoBostonLevelOfStressMap from './views/GoBostonLevelOfSressMap/GoBostonLevelOfStressMap';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,7 @@ root.render(
       <Routes>
         <Route path="/" element={<ProposedRoutesMap/>}/>
         <Route path="/stress-map" element={<LevelOfStressRouteMap/>}/>
+        <Route path="/go-boston" element={<GoBostonLevelOfStressMap/>}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>

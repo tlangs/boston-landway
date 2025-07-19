@@ -392,47 +392,29 @@
     {
         "type": "way",
         "id": 825315811,
-        "notes": "Forest Hills Southbound",
-        "nodesSubset": [
-            7706308178,
-            12381360652,
-            11946317668,
-            12381360642,
-            11946317647,
-            12381360641,
-            11946317648,
-            11946317649,
-            11946317650,
-            11946322569,
-            11946317651,
-            12381360681,
-            11946317652,
-            11946317653,
-            11946322609,
-            11946317654,
-            11946317655,
-            12111607955,
-            11946322571,
-            11946322572,
-            11946317657,
-            12381360682,
-            11946317658,
-            12381360683,
-            11946317659,
-            11946322573,
-            11946317660,
-            11946322575,
-            11946322574,
-            11946317661,
-            11946322576,
-            11946317662,
-            11946322577,
-            11946322579,
-            11946322578,
-            11946317663,
-            11946322580,
-            12304951153
-        ]
+        "notes": "Forest Hills Southbound"
+    },
+
+    {
+        "type": "way",
+        "id": 1288146439,
+        "notes": "Forest Hills Southbound Cycletrack"
+    },    
+    {
+        "type": "way",
+        "id": 1288146442,
+        "notes": "Forest Hills Southbound Cycletrack"
+    },    
+
+    {
+        "type": "way",
+        "id": 1288146444,
+        "notes": "Forest Hills Southbound Cycletrack"
+    },    
+    {
+        "type": "way",
+        "id": 1288146441,
+        "notes": "Forest Hills Southbound Cycletrack"
     },
     {
         "type": "way",
@@ -732,69 +714,139 @@
     {
         "type": "way",
         "id": 485286879,
-        "notes": "Southwest Corridor",
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 117737209,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635649,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 383029058,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635650,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635651,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635652,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635653,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635654,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 509931860,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635655,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1387077583,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 383937993,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1387077582,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1083635656,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 8646853,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1079643192,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1079643191,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1025026426,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 1025026425,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 817036562,
+        "notes": "Southwest Corridor"
+    },
+    {
+        "type": "way",
+        "id": 40016861,
+        "notes": "Dartmouth Northbound",
         "nodesSubset": [
-            61362231,
-            1325750549,
-            7623711936,
-            9930557335,
-            6821190124
+            481082951,
+            1038897337,
+            481083071,
+            1294999086
         ]
     },
     {
         "type": "way",
-        "id": 426462252,
-        "notes": "Massachussetts Avenue Southbound"
+        "id": 87075316,
+        "notes": "Dartmouth Southbound",
+        "nodesSubset": [
+            1294998572,
+            9960032048,
+            481082950,
+            481082951
+        ]
     },
     {
         "type": "way",
-        "id": 485286878,
-        "notes": "Massachussetts Avenue Southbound"
+        "id": 927057118,
+        "notes": "Dartmouth Street"
     },
     {
         "type": "way",
-        "id": 426462236,
-        "notes": "Massachussetts Avenue Southbound"
-    },
-    {
-        "type": "way",
-        "id": 426462212,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 426462210,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 420501710,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 485292826,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 383058042,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 533474631,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 533474632,
-        "notes": "Columbus Avenue"
-    },
-    {
-        "type": "way",
-        "id": 383058044,
-        "notes": "Columbus Avenue"
+        "id": 8650297,
+        "notes": "Dartmouth Street"
     },
     {
         "type": "way",
@@ -1213,6 +1265,42 @@
     },
     {
         "type": "way",
+        "id": 1314062047,
+        "notes": "North Washington Street Crossing",
+        "nodesSubset": [
+            12162577694,
+            12162615660,
+            12162615659,
+            11728768435
+        ]
+    },
+    {
+        "type": "way",
+        "id": 1392256154,
+        "notes": "North Washington Street, Southbound",
+        "nodesSubset": [
+            12162577694,
+            12166892209,
+            12916598346
+        ]
+    },
+    {
+        "type": "way",
+        "id": 1291968604,
+        "notes": "North Washington Street, Southbound"
+    },
+    {
+        "type": "way",
+        "id": 1392256153,
+        "notes": "North Washington Street, Southbound"
+    },
+    {
+        "type": "way",
+        "id": 1395413425,
+        "notes": "North Washington Street, Southbound"
+    },
+    {
+        "type": "way",
         "id": 1314062049,
         "notes": "Chelsea Street, Northbound"
     },
@@ -1583,6 +1671,15 @@
     },
     {
         "type": "way",
+        "id": 563969098,
+        "notes": "South Bremen Street",
+        "nodesSubset": [
+            7600809953,
+            7600809952
+        ]
+    },
+    {
+        "type": "way",
         "id": 8643798,
         "notes": "South Bremen Street",
         "nodesSubset": [
@@ -1761,7 +1858,27 @@
     },
     {
         "type": "way",
-        "id": 129032477,
+        "id": 1114932755,
+        "notes": "East Boston Greenway"
+    },
+    {
+        "type": "way",
+        "id": 75801519,
+        "notes": "East Boston Greenway"
+    },
+    {
+        "type": "way",
+        "id": 1114932751,
+        "notes": "East Boston Greenway"
+    },
+    {
+        "type": "way",
+        "id": 1114932753,
+        "notes": "East Boston Greenway"
+    },
+    {
+        "type": "way",
+        "id": 1114932752,
         "notes": "East Boston Greenway"
     }
 ]
