@@ -1,0 +1,12 @@
+[
+    { "type": "way_range", "name": "Washington Street", "goBoston": "existing", "fromId": 844990619, "toId": 426442091},
+    { "type": "ways", "notes": "South Street", "goBoston": "existing", "ids": [591252063, 591278077, 8649795]},
+    { "type": "ways", "notes": "Poplar Street", "goBoston": "existing", "ids": [8649554, 1202079846, 139439563]},
+    { "type": "way_range", "name": "Belgrade Avenue", "goBoston": "future", "fromId": 139439560, "toId": 591278030},
+    { "type": "way_range", "name": "Belgrade Avenue", "goBoston": "existing", "fromId": 312345532, "toId": 312345534},
+    { "type": "way", "notes": "Beech Street", "goBoston": "existing", "id": 8644489},
+    { "type": "way_fill", "name": "Centre Street", "goBoston": "existing", "startId": 312345586, "noGoes": [310310952]},
+    { "type": "ways_with_name", "name": "West Roxbury Centre Street Rotary", "goBoston": "existing"},
+    { "type": "way_fill", "name": "Centre Street", "goBoston": "existing", "startId": 8647841, "noGoes": [48919790, 1417994668]},
+    { "type": "way", "notes": "Cummins Highway", "goBoston": "existing", "id": 508807134}
+]

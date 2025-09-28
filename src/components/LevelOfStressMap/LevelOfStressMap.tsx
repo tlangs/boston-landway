@@ -1,9 +1,10 @@
 import './LevelOfStressMap.css'
-import { useRef, useEffect, type RefObject, ReactElement, Fragment } from 'react'
+import { useRef, useEffect, type RefObject, ReactElement, Fragment, useContext } from 'react'
 import mapboxgl, { ExpressionSpecification } from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import LevelOfStressLegend from '../LevelOfStressLegend/LevelOfStressLegend';
 import GoBostonLegend from '../GoBostonLegend/GoBostonLegend'
+import { GoBostonTogglesContext } from '../../views/GoBostonLevelOfSressMap/GoBostonLevelOfStressMap';
 
 const lastMapCenterKey = "lastMapCenter"
 const lastZoomLevelKey = "lastZoomLevel"
@@ -52,6 +53,8 @@ type LevelOfStressMapProps = {
 
 function LevelOfStressMap({routes, routeNames, goBostonOverlay = false}: LevelOfStressMapProps): ReactElement {
 
+    const {showProjects, showLevelOfStress} = useContext(GoBostonTogglesContext)
+
     const ltsPaint = {
         'line-color': [
           'case',
@@ -68,19 +71,20 @@ function LevelOfStressMap({routes, routeNames, goBostonOverlay = false}: LevelOf
           stressLevelFourHex
         ] as ExpressionSpecification,
         'line-opacity': goBostonOverlay ? 1 : .8,
-        'line-width': 4
+        'line-width': 2
       };
       
       const goBostonExisting = ['==', ["get", "goBoston"], "existing"]
       const goBostonFuture = ['==', ["get", "goBoston"], "future"]
       const goBostonPriority = ['==', ["get", "goBoston"], "priority"]
       
-      const goBostonExistingHex = '#B5C1B8'
+      // const goBostonExistingHex = '#B5C1B8'
+      const goBostonExistingHex = 'rgba(0, 0, 0, 0.0)'
       const goBostonFutureHex = '#71AA88'
       const goBostonPriorityHex = '#03694B'
       const goBostonDefaultHex = '#515151'
       
-      const goBostonPaint = {
+      const goBostonPriorityPaint = {
           'line-color': [
               'case',
               goBostonExisting,
@@ -91,9 +95,8 @@ function LevelOfStressMap({routes, routeNames, goBostonOverlay = false}: LevelOf
               goBostonPriorityHex,
               goBostonDefaultHex
           ] as ExpressionSpecification,
-          'line-width': 24,
-          'line-opacity': 1,
-          'line-blur': 4
+          'line-width': 8,
+          'line-opacity': 1
       }
 
     const mapRef: RefObject<mapboxgl.Map> = useRef(null as unknown as mapboxgl.Map);
@@ -131,14 +134,14 @@ function LevelOfStressMap({routes, routeNames, goBostonOverlay = false}: LevelOf
         for (const routeName of routeNames) {
             mapRef.current.on('load', () => {
               mapRef.current.addLayer({
-                id: "goBoston" + routeName,
+                id: routeName + ":priority",
                 type: 'line',
                 source: `${routeName}Source`,
                 layout: {
                   'line-join': 'bevel',
                   'line-cap': 'round'
                 },
-                paint: goBostonPaint
+                paint: goBostonPriorityPaint
               });
             })
           }
@@ -154,22 +157,19 @@ function LevelOfStressMap({routes, routeNames, goBostonOverlay = false}: LevelOf
               'line-join': 'bevel',
               'line-cap': 'round'
             },
-            paint: ltsPaint
+            paint: showLevelOfStress ? ltsPaint : {}
           });
         })
       }
-
-
-
   
-      mapRef.current.on('mouseenter', routeNames, () => {
+      mapRef.current.on('mouseenter', routeNames.map(r => r + ":priority"), () => {
         mapRef.current.getCanvas().style.cursor = 'pointer'
       })
-      mapRef.current.on('mouseleave', routeNames, () => {
+      mapRef.current.on('mouseleave', routeNames.map(r => r + ":priority"), () => {
         mapRef.current.getCanvas().style.cursor = ''
       })
   
-      mapRef.current.on('click', routeNames, (e) => {
+      mapRef.current.on('click', routeNames.map(r => r + ":priority"), (e) => {
         if (e.features && e.features[0] && e.features[0].properties) {
           const props = e.features[0].properties;
   
@@ -194,14 +194,14 @@ function LevelOfStressMap({routes, routeNames, goBostonOverlay = false}: LevelOf
       return () => {
         mapRef.current.remove()
       }
-    }, [])
+    })
   
   
     return (
       <Fragment>
         <div id="root">
           <LevelOfStressLegend colorScale={[stressLevelOneHex, stressLevelTwoHex, stressLevelThreeHex, stressLevelFourHex]} />
-          {goBostonOverlay && <GoBostonLegend colorScale={[goBostonExistingHex, goBostonFutureHex, goBostonPriorityHex]}/>}
+          {goBostonOverlay && <GoBostonLegend colorScale={['#F8F8F8', goBostonFutureHex, goBostonPriorityHex]}/>}
           <div id='map-container' ref={mapContainerRef} />
         </div>
       </Fragment>

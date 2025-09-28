@@ -1,17 +1,32 @@
-import { ReactElement } from 'react'
+import { createContext, ReactElement, useState } from 'react'
 
-import eastBoston from '../../assets/neighborhoods/annotated/east-boston-annotated-geojson.json'
 import LevelOfStressMap from '../../components/LevelOfStressMap/LevelOfStressMap';
+import goBoston from '../../assets/neighborhoods/annotated/go-boston-annotated-geojson.json';
 
 const routes = [
-  eastBoston
+  goBoston
+
 ] as GeoJSON.FeatureCollection[]
 
 const routeNames = [
-  "eastBoston"
+  "goBoston"
 ]
+
+const goBostonTogglesDefault = {
+  showProjects: true,
+  setShowProjects: (v: boolean) => {},
+  showLevelOfStress: true,
+  setShowLevelOfStress: (v: boolean) => {}
+}
+
+export const GoBostonTogglesContext = createContext(goBostonTogglesDefault)
+
 function GoBostonLevelOfSressMap(): ReactElement {
-    return <LevelOfStressMap routes={routes} routeNames={routeNames}  goBostonOverlay={true}/>
+  const [showProjects, setShowProjects] = useState(true);
+  const [showLevelOfStress, setShowLevelOfStress] = useState(true);
+    return <GoBostonTogglesContext.Provider value={{showProjects, setShowProjects, showLevelOfStress, setShowLevelOfStress}}>
+        <LevelOfStressMap routes={routes} routeNames={routeNames}  goBostonOverlay={true}/>
+      </GoBostonTogglesContext.Provider>
   }
 
 export default GoBostonLevelOfSressMap;

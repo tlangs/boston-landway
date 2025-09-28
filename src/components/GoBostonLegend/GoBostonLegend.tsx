@@ -8,6 +8,8 @@ import { ReactComponent as TextLTS2 } from '../../assets/Text_LTS2.svg'
 import { ReactComponent as TextLTS3 } from '../../assets/Text_LTS3.svg'
 import { ReactComponent as TextLTS4 } from '../../assets/Text_LTS4.svg'
 import { ReactComponent as LogoStressmap } from '../../assets/BikeStressMap.svg'
+import { useContext } from 'react'
+import { GoBostonTogglesContext } from '../../views/GoBostonLevelOfSressMap/GoBostonLevelOfStressMap'
 
 
 type GoBostonLegendProps = {
@@ -22,6 +24,8 @@ export default function GoBostonLegend(props: GoBostonLegendProps) {
   const existing = { borderColor: colorScale[0] }
   const future = { borderColor: colorScale[1] }
   const priority = { borderColor: colorScale[2] }
+
+  const {showProjects, setShowProjects, showLevelOfStress, setShowLevelOfStress} = useContext(GoBostonTogglesContext)
   // console.log(lts1)
 
   // const borderStyle = ({colorScale, index}) => {
@@ -34,11 +38,11 @@ export default function GoBostonLegend(props: GoBostonLegendProps) {
 
   return (
     <div className="go-boston-legend go-boston-grid-container">
-      <span>Go Boston 2030</span>
+      <h2>Go Boston 2030</h2>
 
-      <div className='go-boston-legend-row' style={existing}>
+      <div className='go-boston-legend-row' style={future}>
         <div className="go-boston-legend-text">
-          <span>Existing Bicycle Network</span>
+            <span>Existing Network</span>
         </div>
       </div>
 
@@ -53,6 +57,17 @@ export default function GoBostonLegend(props: GoBostonLegendProps) {
           <span>Priority Projects</span>
         </div>
       </div>
+      <div>
+      <input
+        type="checkbox"
+        id="toggleLevelOfStress"
+        name="toggleLevelOfStress"
+        onChange={(e) => setShowLevelOfStress(e.target.checked)}
+        checked={showLevelOfStress}
+      />
+      <label htmlFor="toggleLevelOfStress">Level of Stress</label>
+      </div>
+
     </div>
   )
 }

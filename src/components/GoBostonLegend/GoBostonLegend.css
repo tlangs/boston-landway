@@ -8,7 +8,9 @@
   top: 0;
   margin: 12px;
   border-radius: 4px;
-  width: 240px
+  width: 240px;
+  padding-bottom: 12px;
+
   /* display: grid; */
 }
 
@@ -33,6 +35,8 @@
   border-radius: 16px;
   grid-column: 1 / span 3;
   display: grid;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .go-boston-legend-icon {
