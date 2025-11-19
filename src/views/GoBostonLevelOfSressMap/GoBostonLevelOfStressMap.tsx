@@ -16,15 +16,18 @@ const goBostonTogglesDefault = {
   showProjects: true,
   setShowProjects: (v: boolean) => {},
   showLevelOfStress: true,
-  setShowLevelOfStress: (v: boolean) => {}
+  setShowLevelOfStress: (v: boolean) => {},
+  showExistingInfrastructure: false,
+  setShowExistingInfrastructure: (v: boolean) => {}
 }
 
 export const GoBostonTogglesContext = createContext(goBostonTogglesDefault)
 
 function GoBostonLevelOfSressMap(): ReactElement {
   const [showProjects, setShowProjects] = useState(true);
-  const [showLevelOfStress, setShowLevelOfStress] = useState(true);
-    return <GoBostonTogglesContext.Provider value={{showProjects, setShowProjects, showLevelOfStress, setShowLevelOfStress}}>
+  const [showLevelOfStress, setShowLevelOfStress] = useState(false);
+  const [showExistingInfrastructure, setShowExistingInfrastructure] = useState(false);
+    return <GoBostonTogglesContext.Provider value={{showProjects, setShowProjects, showLevelOfStress, setShowLevelOfStress, showExistingInfrastructure, setShowExistingInfrastructure}}>
         <LevelOfStressMap routes={routes} routeNames={routeNames}  goBostonOverlay={true}/>
       </GoBostonTogglesContext.Provider>
   }

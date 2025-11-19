@@ -20,6 +20,12 @@
   justify-content: center;
 }
 
+.go-boston-legend-header {  
+  grid-column: 1 / span 3;
+  display: grid;
+  justify-content: center;
+}
+
 .go-boston-legend-header-default {
   grid-column: 1;
   grid-row: 1 / span 4;
@@ -38,6 +44,19 @@
   padding: 5px;
   margin-top: 5px;
 }
+
+.go-boston-legend-checkbox {  
+  grid-column: 1 / span 2;
+  display: grid;
+  align-items: left;
+  justify-content: start;
+}
+
+.go-boston-legend-label {  
+  grid-column: 2 / span 2;
+  display: grid;
+}
+
 
 .go-boston-legend-icon {
   grid-column: 1;

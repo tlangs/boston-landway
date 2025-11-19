@@ -37,7 +37,7 @@ export default function LevelOfStressLegend(props: LevelOfStressLegendProps) {
     <div className="legend grid-container">
       <div className="legend-header-hover">
         <LogoStressmap title='Legend' className='hover-image' />
-      </div>
+      </div> 
 
       <div className='legend-row' style={lts1}>
         <div className="legend-icon">

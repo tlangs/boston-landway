@@ -1,5 +1,6 @@
 .legend {
-  background-color: #F8F8F8;
+  /* background-color: #F8F8F8; */
+  background-color: white;
   color: #b106f5;
   padding: 6px 12px;
   font-family: monospace;
@@ -33,6 +34,7 @@
   border-radius: 16px;
   grid-column: 1 / span 3;
   display: grid;
+  margin-bottom: 10px;
 }
 
 .legend-icon {

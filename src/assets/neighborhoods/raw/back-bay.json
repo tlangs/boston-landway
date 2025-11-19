@@ -14,5 +14,6 @@
     { "type": "way_range", "name": "Massachusetts Avenue", "goBoston": "existing", "fromId": 1317061163, "toId": 826552799},
     { "type": "way_range", "name": "Massachusetts Avenue", "goBoston": "existing", "fromId": 1217456937, "toId": 1337630472, "noGoes": [91998191]},
     { "type": "way", "notes": "Massachusetts Avenue Southbound", "goBoston": "existing", "id": 1242122827},
+    { "type": "way_range", "name": "Massachusetts Avenue", "goBoston": "existing", "fromId": 1317061163, "toId": 29328400},
     { "type": "way_range", "name": "Beacon Street", "goBoston": "priority", "project": "Beacon St.", "fromId": 806431512, "toId": 485271439}
 ]

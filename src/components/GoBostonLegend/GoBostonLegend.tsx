@@ -25,7 +25,7 @@ export default function GoBostonLegend(props: GoBostonLegendProps) {
   const future = { borderColor: colorScale[1] }
   const priority = { borderColor: colorScale[2] }
 
-  const {showProjects, setShowProjects, showLevelOfStress, setShowLevelOfStress} = useContext(GoBostonTogglesContext)
+  const {showProjects, setShowProjects, showLevelOfStress, setShowLevelOfStress, showExistingInfrastructure, setShowExistingInfrastructure} = useContext(GoBostonTogglesContext)
   // console.log(lts1)
 
   // const borderStyle = ({colorScale, index}) => {
@@ -38,9 +38,12 @@ export default function GoBostonLegend(props: GoBostonLegendProps) {
 
   return (
     <div className="go-boston-legend go-boston-grid-container">
-      <h2>Go Boston 2030</h2>
 
-      <div className='go-boston-legend-row' style={future}>
+      <div className='go-boston-legend-header'>
+        <h2>Go Boston 2030</h2>
+      </div>
+
+      <div className='go-boston-legend-row' style={existing}>
         <div className="go-boston-legend-text">
             <span>Existing Network</span>
         </div>
@@ -57,15 +60,28 @@ export default function GoBostonLegend(props: GoBostonLegendProps) {
           <span>Priority Projects</span>
         </div>
       </div>
-      <div>
-      <input
-        type="checkbox"
-        id="toggleLevelOfStress"
-        name="toggleLevelOfStress"
-        onChange={(e) => setShowLevelOfStress(e.target.checked)}
-        checked={showLevelOfStress}
-      />
-      <label htmlFor="toggleLevelOfStress">Level of Stress</label>
+      <br/>
+
+      <div className='go-boston-legend-checkbox'>
+        <input
+          type="checkbox"
+          id="toggleLevelOfStress"
+          name="toggleLevelOfStress"
+          onChange={(e) => setShowLevelOfStress(e.target.checked)}
+          checked={showLevelOfStress}
+        />
+        <label className='go-boston-legend-label' htmlFor="toggleLevelOfStress">Level of Stress</label>
+      </div>
+  
+      <div className='go-boston-legend-checkbox'>
+        <input
+          type="checkbox"
+          id="toggleExistingInfrastructure"
+          name="toggleExistingInfrastructure"
+          onChange={(e) => setShowExistingInfrastructure(e.target.checked)}
+          checked={showExistingInfrastructure}
+        />
+        <label className='go-boston-legend-label' htmlFor="toggleExistingInfrastructure">Existing Infrastructure</label>
       </div>
 
     </div>

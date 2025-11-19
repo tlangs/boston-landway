@@ -24,6 +24,7 @@
     { "type": "way", "notes": "Dartmouth Street", "goBoston": "existing", "id": 8641685 },
     { "type": "ways", "notes": "West Dedham Street", "goBoston": "existing", "ids" : [8640321, 927012511] },
     { "type": "way_range", "name": "Monsignor Reynolds Way", "goBoston": "existing", "fromId": 1124155780, "toId": 1426804718 },
-    { "type": "way", "notes": "Malden Street", "goBoston": "existing", "id": 8652311 }
+    { "type": "way", "notes": "Malden Street", "goBoston": "existing", "id": 8652311 },
+    { "type": "way_range", "name": "Tremont Street", "goBoston": "existing", "fromId": 426462287, "toId": 1329768970}
 
 ]

@@ -6,7 +6,7 @@
     { "type": "way_range", "name": "Morton Street", "goBoston": "future", "fromId": 8639600, "toId": 277957942, "noGoes": [34729465]},
     { "type": "way", "notes": "Morton Street", "goBoston": "future", "id": 1052345012},
     { "type": "way_fill", "name": "Washington Street", "goBoston": "future", "startId": 426485769, "noGoes": [8644630]},
-    { "type": "way_fill", "name": "Adams Street", "goBoston": "existing", "startId": 8645561},
+    { "type": "way_fill", "name": "Adams Street", "goBoston": "existing", "startId": 8645561, "noGoes": [76611316]},
     { "type": "way", "notes": "Adams Street Slip Lane", "goBoston": "existing", "id": 526440075},
     { "type": "way", "name": "Ashmont Street", "goBoston": "existing", "id": 8645990},
     { "type": "way", "notes": "Freemont Street", "goBoston": "future", "id": 8642557, "excludeNodes": [
