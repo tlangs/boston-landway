@@ -1,15 +1,17 @@
-[
-    { "type": "way_range", "name": "Blue Hills Parkway", "from_id": 8642290, "to_id": 9113807, "notes": "Northbound" },
-    { "type": "way_range", "name": "Blue Hills Parkway", "from_id": 426595157, "to_id": 211852999, "notes": "Southbound" },
-    { "type": "way_range", "name": "Blue Hill Avenue", "from_id": 8651916, "to_id": 211852995, "notes": "Northbound" },
-    { "type": "way_range", "name": "Blue Hill Avenue", "from_id": 693598214, "to_id": 8648857, "notes": "Southbound" },
-    { "type": "way_range", "name": "Warren Street", "from_id": 8648449, "to_id": 301820170 },
-
-    { "type": "way_range", "name": "Warren Street", "from_id": 244240322, "to_id": 426490101, "notes": "Northbound" },
-    { "type": "way_range", "name": "Warren Street", "from_id": 1092366269, "to_id": 508841761, "notes": "Southbound" },
-
-    { "type": "way", "notes": "Nubian Cycletrack", "id": 1035858701},
-    { "type": "way", "notes": "Nubian Cycletrack", "id": 1255054902},
-
-    { "type": "way", "notes": "Kneeland Street, Eastbound", "id": 242632754 }
-]
+{
+    "ways": [
+        { "type": "way_range", "name": "Blue Hills Parkway", "from_id": 8642290, "to_id": 9113807, "notes": "Northbound" },
+        { "type": "way_range", "name": "Blue Hills Parkway", "from_id": 426595157, "to_id": 211852999, "notes": "Southbound" },
+        { "type": "way_range", "name": "Blue Hill Avenue", "from_id": 8651916, "to_id": 211852995, "notes": "Northbound" },
+        { "type": "way_range", "name": "Blue Hill Avenue", "from_id": 693598214, "to_id": 8648857, "notes": "Southbound" },
+        { "type": "way_range", "name": "Warren Street", "from_id": 8648449, "to_id": 301820170 },
+        
+        { "type": "way_range", "name": "Warren Street", "from_id": 244240322, "to_id": 426490101, "notes": "Northbound" },
+        { "type": "way_range", "name": "Warren Street", "from_id": 1092366269, "to_id": 508841761, "notes": "Southbound" },
+        
+        { "type": "way", "notes": "Nubian Cycletrack", "id": 1035858701},
+        { "type": "way", "notes": "Nubian Cycletrack", "id": 1255054902},
+        
+        { "type": "way", "notes": "Kneeland Street, Eastbound", "id": 242632754 }
+    ]
+}

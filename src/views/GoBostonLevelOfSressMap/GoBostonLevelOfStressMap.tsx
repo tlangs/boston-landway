@@ -4,8 +4,7 @@ import LevelOfStressMap from '../../components/LevelOfStressMap/LevelOfStressMap
 import goBoston from '../../assets/neighborhoods/annotated/go-boston-annotated-geojson.json';
 
 const routes = [
-  goBoston
-
+  goBoston.featureCollection
 ] as GeoJSON.FeatureCollection[]
 
 const routeNames = [

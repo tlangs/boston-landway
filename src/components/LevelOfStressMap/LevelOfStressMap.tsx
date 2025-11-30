@@ -234,8 +234,7 @@ function LevelOfTrafficStressPopupHTML(properties: { [name: string]: any }) {
   html += `<tr><td>Lanes:</td><td>${properties["lanes"]}</td></tr>`
   html += `<tr><td>Condition:</td><td>${properties["condition"]}</td></tr>`
   html += `<tr><td>Cycling facilities:</td><td>
-  ${
-    properties["cycleway"] ? 
+  ${properties["cycleway"] ? 
     Object.entries(JSON.parse(properties["cycleway"])).filter(([key, _]) => key != "wayOsmId").map(([key, value]) => `${key}: ${value}`).join("<br/>") 
     : "None"
   }</td></tr>`
