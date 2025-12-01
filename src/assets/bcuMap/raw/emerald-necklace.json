@@ -1,0 +1,23 @@
+{
+    "routeName": "Emerald Necklace",
+    "ways": [
+        { "type": "way_range", "name": "Commonwealth Avenue", "notes": "Eastbound from Bowker Overpass", "fromId": 822646986, "toId": 806281874},
+        { "type": "way_range", "name": "Commonwealth Avenue", "notes": "Westbound to Bowker Overpass", "fromId": 8649840, "toId": 1119772946},
+        { "type": "way_range", "name": "Commonwealth Avenue", "notes": "Eastbound Mass Ave Connections", "fromId": 426643811, "toId": 1088906027, "noGoes": [86479795]},
+        { "type": "way_range", "name": "Commonwealth Avenue", "notes": "Westbound Mass Ave Connections", "fromId": 8647128, "toId": 1088906029, "noGoes": [485271434]},
+        { "type": "way_geometry", "notes": "Future Bowker Overpass Path", "geometries": [
+            { "latitude": 42.3488343, "longitude": -71.0926661},
+            { "latitude": 42.3467565, "longitude": -71.0924168}
+        ], "props": {
+            "osmId": null,
+            "highway": "cycleway"
+        }},
+        { "type": "way", "notes": "Sidewalks to Fenway paths", "id": 831595608},
+        { "type": "way_range", "name": "Charlesgate East", "notes": "Northbound connection to Beacon", "fromId": 426831433, "toId": 813535034},
+        { "type": "way_range", "name": "Charlesgate West", "notes": "Southbound connection from Beacon", "fromId": 242515006, "toId": 1119772945},
+        { "type": "way_fill", "highway": "cycleway", "startId": 821495776, "noGoes": [1087259250]},
+        { "type": "ways", "name": "Agassiz Road", "ids": [8644069, 87457166, 87457157], "excludeNodes": [61517895, 13185019208, 13185019210]},
+        { "type": "way_range", "name": "Lost Emerald Necklace", "fromId": 1052871409, "toId": 87487516 }
+
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "routeName": "Southwest Corridor",
+    "ways": [
+        { "type": "way_relation", "name": "Pierre Lallement Bike Path"},
+        { "type": "way_fill", "highway": "cycleway", "startId": 1092491910, "noGoes": [970452858]}
+    ]
+}

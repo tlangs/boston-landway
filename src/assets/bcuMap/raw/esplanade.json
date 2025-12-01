@@ -1,0 +1,6 @@
+{
+    "routeName": "Charles River Esplanade",
+    "ways": [
+        { "type": "way_relation", "name": "Dr. Paul Dudley White Path" }
+    ]
+}

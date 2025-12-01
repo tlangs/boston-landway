@@ -1,0 +1,12 @@
+{
+    "routeName": "Prospect St.",
+    "ways": [
+        { "type": "way_range", "name": "Prospect Street", "fromId": 8615411, "toId": 924184058},
+        { "type": "way_fill", "name": "Massachusetts Avenue", "startId": 1092687153},
+        { "type": "way_fill", "highway": "cycleway", "startId": 1202220115, "noGoes": [836464097,  830564426]},
+        { "type": "ways", "ids": []},
+        { "type": "way", "id": 123},
+        { "type": "way_relation", "name": "Neponset River Greenway"},
+        { "type": "way_relation", "name": "Somerville Community Path"}
+    ]
+}
