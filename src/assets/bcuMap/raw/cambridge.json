@@ -6,7 +6,6 @@
         { "type": "way_fill", "highway": "cycleway", "startId": 1202220115, "noGoes": [836464097,  830564426]},
         { "type": "ways", "ids": []},
         { "type": "way", "id": 123},
-        { "type": "way_relation", "name": "Neponset River Greenway"},
         { "type": "way_relation", "name": "Somerville Community Path"}
     ]
 }

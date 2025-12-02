@@ -1,0 +1,6 @@
+{
+    "routeName": "Future",
+    "ways": [
+        { "type": "way_fill", "name": "Prospect Street", "startId": 8615411}    
+    ]
+}
