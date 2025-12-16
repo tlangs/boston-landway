@@ -209,7 +209,7 @@ function LevelOfTrafficStressPopupHTML(properties: { [name: string]: any }) {
     Object.entries(JSON.parse(properties["cycleway"])).filter(([key, _]) => key != "wayOsmId").map(([key, value]) => `${key}: ${value}`).join("<br/>") 
     : "None"
   }</td></tr>`
-  html += `<tr><td>OSM ID:</td><td><a href="https://www.openstreetmap.org/way/${properties["osmId"]}">${properties["osmId"]}</a></td></tr>`
+  html += `<tr><td>OSM ID:</td><td><a target="_blank" href="https://www.openstreetmap.org/way/${properties["osmId"]}">${properties["osmId"]}</a></td></tr>`
   html += '</table>'
   return html
 }
