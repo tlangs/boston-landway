@@ -44,3 +44,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# How to create a new layer
+
+## Creating a route JSON
+### Types of ways
+- `way_fill`: string of the `name` of the street to be selected. This selects all OSM segments with the same `name` that are connected to the `startId`
+-- `startId`: the `OSMID` of a way of the selected street
+-- `noGoes` (optional): list of `OSMID` at either end of the street to terminate the selected way. These create the bounds of the `way_fill` 
+- `way_multi_fill`: string of the `name` of the street to be selected. This selects all OSM segments with the same `name` that are connected to the `startId`, and creates multiple  
+-- `startIds`: list of `OSMID` of a way of the selected street
+- `way_range`
+-- `name`
+-- `notes`
+-- `fromId`
+-- `toId`
+-- `noGoes`
+- `way_geometry`
+-- `notes`
+-- `geometries`
+- `way`
+-- `notes`
+-- `id`
+- `ways`
+-- `name`
+-- `ids`
+-- `excludeNodes`
+
+## OSM Editing
+If way_fill does not catch a separately mapped cycleway, it is likely that the `cycleway` is does not have the matching `name`. You can use this [Overpass Query](https://overpass-turbo.eu/s/2gCw) to quickly identify all separately mapped `cycleway` without a `name`. 
