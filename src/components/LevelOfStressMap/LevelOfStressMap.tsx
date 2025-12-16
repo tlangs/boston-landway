@@ -147,6 +147,7 @@ function LevelOfStressMap({ routes, routeNames, goBostonOverlay = false }: Level
           mapRef.current.addLayer({
             id: routeName + ":priority",
             type: 'line',
+            slot: 'middle',
             source: `${routeName}Source`,
             layout: {
               'line-join': 'bevel',

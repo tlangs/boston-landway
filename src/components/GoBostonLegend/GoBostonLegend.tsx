@@ -1,13 +1,4 @@
 import './GoBostonLegend.css'
-import { ReactComponent as IconLTS1 } from '../../assets/Icon_LTS1.svg'
-import { ReactComponent as IconLTS2 } from '../../assets/Icon_LTS2.svg'
-import { ReactComponent as IconLTS3 } from '../../assets/Icon_LTS3.svg'
-import { ReactComponent as IconLTS4 } from '../../assets/Icon_LTS4.svg'
-import { ReactComponent as TextLTS1 } from '../../assets/Text_LTS1.svg'
-import { ReactComponent as TextLTS2 } from '../../assets/Text_LTS2.svg'
-import { ReactComponent as TextLTS3 } from '../../assets/Text_LTS3.svg'
-import { ReactComponent as TextLTS4 } from '../../assets/Text_LTS4.svg'
-import { ReactComponent as LogoStressmap } from '../../assets/BikeStressMap.svg'
 import { useContext } from 'react'
 import { GoBostonTogglesContext } from '../../views/GoBostonLevelOfSressMap/GoBostonLevelOfStressMap'
 

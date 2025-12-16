@@ -24,4 +24,5 @@
         { "type": "way", "notes": "Antwerp Street Extension", "goBoston": "existing", "id": 345144318},
         { "type": "way", "notes": "Telford Street", "goBoston": "future", "id": 8644847}
     ]
+
 }
